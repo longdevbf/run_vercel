@@ -1,0 +1,44 @@
+{
+  "name": "meshjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@lottiefiles/react-lottie-player": "^3.5.4",
+    "@meshsdk/contract": "^1.9.0-beta.12",
+    "@meshsdk/core": "^1.8.14",
+    "@meshsdk/react": "^1.8.14",
+    "@metamask/detect-provider": "^2.0.0",
+    "@types/react-datepicker": "^6.2.0",
+    "cbor-x": "^1.6.0",
+    "jquery": "^3.7.1",
+    "lucid-cardano": "^0.10.10",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-datepicker": "^7.6.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
+    "react-toastify": "^11.0.3",
+    "react-typed": "^2.0.12"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.32",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

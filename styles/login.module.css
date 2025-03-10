@@ -1,0 +1,325 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+
+.container {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(#30142b, #2772a1);
+  height: 100vh;
+}
+
+.loginPage {
+  /* Thay đổi từ login-page sang loginPage */
+  width: 400px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.form {
+  /* Giữ nguyên */
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #161a29;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+  border-radius: 10px;
+}
+
+.form input {
+  /* Giữ nguyên */
+  width: 100%;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.title {
+  color: white;
+  /* Giữ nguyên */
+}
+
+.form .message {
+  /* Giữ nguyên */
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  /* Giữ nguyên */
+  color: #289bb8;
+  text-decoration: none;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.form .registerForm {
+  /* Thay đổi từ register-form sang registerForm */
+  display: none;
+}
+
+.btn {
+  /* Giữ nguyên */
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #289bb8;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+.btn:hover {
+  /* Giữ nguyên */
+  background: #289bb8;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #289bb8,
+    0 0 25px #289bb8,
+    0 0 50px #289bb8,
+    0 0 100px #289bb8;
+}
+
+.btn span {
+  /* Giữ nguyên */
+  position: absolute;
+  display: block;
+}
+
+.btn span:nth-child(1) {
+  /* Giữ nguyên */
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #289bb8);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+
+  /* Giữ nguyên */
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.btn span:nth-child(2) {
+  /* Giữ nguyên */
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #289bb8);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s;
+}
+
+.btn span:nth-child(3) {
+  /* Giữ nguyên */
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #289bb8);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+
+  /* Giữ nguyên */
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.btn span:nth-child(4) {
+  /* Giữ nguyên */
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #289bb8);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+
+  /* Giữ nguyên */
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.wrapper {
+  margin-left: -5rem;
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877F2;
+  /* Màu Facebook */
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #FF0000;
+  /* Màu YouTube */
+  color: #ffffff;
+}
+
+.wrapper .google:hover,
+.wrapper .google:hover .tooltip,
+.wrapper .google:hover .tooltip::before {
+  background: #9dc2ff;
+  /* Màu Google */
+  color: #ffffff;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #0077B5;
+  /* Màu LinkedIn */
+  color: #ffffff;
+}
+
+.wrapper .telegram:hover,
+.wrapper .telegram:hover .tooltip,
+.wrapper .telegram:hover .tooltip::before {
+  background: #ffffffe2;
+  /* Màu Telegram */
+  color: #0088CC;
+}
+
+
+.icon {
+  font-size: 24px;
+  /* Icon size */
+  color: gray;
+  /* Default icon color */
+  transition: color 0.3s ease;
+  /* Smooth transition for color change */
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  /* Center the items vertically */
+  color: white;
+  /* Change the color of the text to white */
+  margin: 30px 0;
+  /* Optional: add margin for spacing */
+}
+
+.line {
+  flex: 1;
+  /* Make the line take the remaining space */
+  border-top: 1px solid white;
+  /* White horizontal line */
+  margin: 0 10px;
+  /* Space between the line and text */
+}
+
+.orText {
+  margin: 0 10px;
+  /* Optional: margin for spacing around the "Or" text */
+  color: white;
+  /* Ensure the "Or" text is white */
+}

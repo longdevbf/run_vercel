@@ -1,0 +1,160 @@
+/* CSS chung cho toàn bộ trang */
+.about-us-header {
+  text-align: center;
+  margin: 14rem 0px 0px 0px;
+}
+
+.about-us {
+  margin-bottom: 10rem;
+}
+
+.about-us-home {
+  /* position: relative; */
+  margin: 0 0 4rem;
+  font-weight: 600;
+}
+
+.title-line-svg {
+  position: absolute;
+  top: 25%;
+  left: 53%;
+}
+
+.about-us-home,
+.about-hc-home,
+.our-team__title {
+  font-size: 4rem;
+  color: #333;
+  font-weight: 700;
+}
+
+
+.about-us-description,
+.about-hc-description {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: justify;
+}
+
+.about-us-description {
+  text-align: center;
+}
+
+.about-hc-description {
+  line-height: 3rem;
+  margin-top: 3rem;
+}
+
+.about-hc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  width: 100vw;
+  background-color: #f8fafd;
+  height: 40rem;
+}
+
+.about-hc-text {
+  margin: 0 5rem;
+}
+
+.about-hc-img {
+  width: 35%;
+  height: auto;
+
+}
+
+/* CSS cho phần Our Team */
+.our-team {
+  margin: 100px 0;
+}
+
+.our-team__description {
+  color: #333;
+  font-size: 1.7rem;
+  font-weight: 50;
+  margin: 4rem 0;
+}
+
+.our-team__members {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.our-team__member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0rem 4rem;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.our-team__member-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.our-team__member-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.our-team__member-role {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.our-team__member-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  color: black;
+}
+
+/* Media */
+
+@media (max-width: 768px) {
+  .our-team__members {
+    justify-content: space-between;
+  }
+
+  .our-team__member {
+    flex: 0 0 48%;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-hc-text {
+    margin: 1rem 2rem;
+  }
+
+  .about-us {
+    margin: -2rem 2rem 10rem 0;
+  }
+
+  .our-team {
+    margin-top: 5rem;
+  }
+
+  .about-hc {
+    height: 65rem;
+  }
+}

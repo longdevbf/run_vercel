@@ -1,0 +1,11 @@
+.fullOfHome {
+  display: flex;
+  flex-direction: column;
+  height: 120rem;
+  padding: 0;
+  background-image: url('/purple-png-photos.png'),
+    linear-gradient(120deg, #e0ffff, #b0e0e6, #87cefa);
+  background-position: 0px 150px, 0px;
+  background-size: 100%, cover;
+  background-repeat: no-repeat;
+}
